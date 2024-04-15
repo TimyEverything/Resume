@@ -1,0 +1,313 @@
+
+footer{
+    max-height: 20vh;
+    background-color: black;
+  }
+
+  
+.holder{
+    margin: 7.5px;
+    color:white;
+    background-color: black;
+    padding: 20px;
+    border: 2px white solid;
+    border-radius: 3px;
+    padding: 5%;
+    
+    
+}
+
+main, footer{
+  width: 85%;
+}
+
+main .holder:last-of-type{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  
+}
+
+main .holder:last-of-type div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+}
+
+
+footer .holder{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+#project-holder{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+body{
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav{
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    position: static;
+    top: 0;
+    z-index: 99;
+}
+
+nav div a{
+    color: white;
+    text-decoration: none;
+}
+#home{
+    display: flex;
+    justify-content: end;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#tim_img{
+    width: 30vw;
+    height: auto;
+    border-radius: 100%;
+    background-color: #00bfff;
+    margin: 10px;
+}
+h1{
+  color:#008bf8;
+}
+
+h2{
+  color: #00bfff  ;
+}
+
+/*form*/
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 50vw;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    
+    color: #fff;
+    
+  }
+  
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    color: #00bfff;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+  
+  .title::before,
+  .title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
+    background-color: #00bfff;
+  }
+  
+  .message, 
+  .signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .signin {
+    text-align: center;
+  }
+  
+  .signin a:hover {
+    text-decoration: underline royalblue;
+  }
+  
+  .signin a {
+    color: #00bfff;
+  }
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+  }
+  
+  .form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,
+  .form label .input:valid + span {
+    color: #00bfff;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .input {
+    font-size: medium;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+  }
+  
+  .submit:hover {
+    background-color: #00bfff96;
+  }
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+/*project cards*/
+.card {
+  width: 190px;
+  height: 254px;
+  border-radius: 20px;
+  background: #f5f5f5;
+  position: relative;
+  padding: 1.8rem;
+  border: 2px solid #c3c6ce;
+  transition: 0.5s ease-out;
+  overflow: visible;
+  ;
+}
+
+.card:first-of-type{
+  background-image:'images/lbatt.png'
+}
+
+
+.card-details {
+ color: black;
+  height: 100%;
+  gap: .5em;
+  display: grid;
+  place-content: center;
+  z-index: 1;
+  overflow:hidden;
+}
+
+.card-button {
+  transform: translate(-50%, 125%);
+  width: 60%;
+  border-radius: 1rem;
+  border: none;
+  background-color: #008bf8;
+  color: #fff;
+  font-size: 1rem;
+  padding: .5rem 1rem;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  opacity: 0;
+  transition: 0.3s ease-out;
+}
+ 
+.card-button a{
+  text-decoration: none;
+  color: white;
+}
+
+.card-button a:hover{
+  color: antiquewhite;
+}
+
+.text-body {
+  color: rgb(134, 134, 134);
+}
+
+/*Text*/
+.text-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+ 
+/*Hover*/
+.card:hover {
+  border-color: #008bf8;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+ 
+.card:hover .card-button {
+  transform: translate(-50%, 50%);
+  opacity: 1;
+}
+
